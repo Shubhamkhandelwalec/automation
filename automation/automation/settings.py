@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'automation.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'automation_db',
+        'NAME': 'ficussmart_db',
         'USER': 'test26',
         'PASSWORD': 'Shubham@123',
         'HOST': 'ficussmart.com',
