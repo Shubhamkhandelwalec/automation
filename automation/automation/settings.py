@@ -84,9 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'automation_db',
-        'USER': 'admin',
-        'PASSWORD': 'Shubham070',
-        'HOST': 'database-1.cblsb7zqp3gt.us-east-2.rds.amazonaws.com',
+        'USER': 'test26',
+        'PASSWORD': 'Shubham@123',
+        'HOST': '148.66.138.143',
         'PORT': 3306,
     }
 }
