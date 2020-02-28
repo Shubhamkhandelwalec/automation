@@ -25,7 +25,7 @@ SECRET_KEY = 'vd5=n9kpn7x7c==01_w&z@p^kwt718a4rd*2mn2#hr$m68sd*w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','ficussmart.com']
 
 
 # Application definition
@@ -128,8 +128,8 @@ AUTH_USER_MODEL = 'admin_user.User'
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Media')
 MEDIA_URL = '/Media/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/static/")
-CKEDITOR_BASEPATH = "/static/static/ckeditor/ckeditor/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
