@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+{% block styles %}
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="{% static 'tabslider/styles.css' %}">
+<title>Wifi Smart Plugs| Oakter</title>
+	<style>
+	.product-price-discount del {
+		color: #000000;
+		text-decoration: none;
+		position: relative;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	span.product-price-discount {
+		margin-left: -6px;
+	}
+    .product-price-discount del:before {
+		content: " ";
+		display: block;
+		width: 100%;
+		border-top: 2px solid #ff0000;
+		height: 12px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: rotate(-7deg);
+    }
+	.product-price-discount del span.product-amount {
+		padding: 0px 6px;
+	}
+  </style>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="{% static 'tabslider/jquery.tabslet.min.js' %}"></script>
+<script>
+	$(document).ready(function() {
+		$('.flexslider_kit1').flexslider({
+		    slideshow: false,
+		    animation: "slide",
+    		controlNav: "thumbnails"
+		});
+		$('.flexslider_kit2').flexslider({
+		    slideshow: false,
+		    animation: "slide",
+    		controlNav: "thumbnails"
+		});
+		$('.flexslider_kit3').flexslider({
+		    slideshow: false,
+		    animation: "slide",
+    		controlNav: "thumbnails"
+		});
+		$('.tabs.tabs_controls').tabslet({
+			controls: {
+			  	prev: '.prev_tab',
+			  	next: '.next_tab'
+			}
+		});
+	});
+	$(".add-to-cart.button.nomargin.plus").click( function(e){
+		e.preventDefault();
+		 $( "#oakplusform" ).submit();
+	});
+	$("button.add-to-cart.button.nomargin.Mini").click( function(e){
+		e.preventDefault();
+		 $( "#oakminiform" ).submit();
+	});
+	$(".tab_navigation .next").click( function(e){
+		e.preventDefault();
+		$('.tabs.tabs_controls .next_tab').trigger("click");
+	});
+	$(".tab_navigation .prev").click( function(e){
+		e.preventDefault();
+		$('.tabs.tabs_controls .prev_tab').trigger("click");
+	});
+	/*
+    var oXHR = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+
+    function reportStatus() {
+        if (oXHR.readyState == 4)               // REQUEST COMPLETED.
+            showTheList(this.responseXML);      // ALL SET. NOW SHOW XML DATA.
+    }
+
+    oXHR.onreadystatechange = reportStatus;
+    oXHR.open("GET", "RateLibrary.xml", true);      // true = ASYNCHRONOUS REQUEST (DESIRABLE), false = SYNCHRONOUS REQUEST.
+    oXHR.send();
+    function showTheList(xml) {
+
+
+        var Product_List = xml.getElementsByTagName('Product');       // THE XML TAG NAME.
+
+        {
+            ppp1.innerHTML = "INR " + (parseInt(Product_List[0].getElementsByTagName("Price")[0].childNodes[0].nodeValue) + parseInt(Product_List[1].getElementsByTagName("Price")[0].childNodes[0].nodeValue) +
+            parseInt(Product_List[2].getElementsByTagName("Price")[0].childNodes[0].nodeValue) +parseInt( Product_List[3].getElementsByTagName("Price")[0].childNodes[0].nodeValue) + parseInt( Product_List[3].getElementsByTagName("Price")[0].childNodes[0].nodeValue) +
+            parseInt(Product_List[7].getElementsByTagName("Price")[0].childNodes[0].nodeValue) +  parseInt(Product_List[8].getElementsByTagName("Price")[0].childNodes[0].nodeValue) +2*parseInt( Product_List[11].getElementsByTagName("Price")[0].childNodes[0].nodeValue) )  ;
+
+
+
+        }
+    };
+	*/
+</script>
+
+{% endblock %}
+{% block content %}
+
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>Wifi Smart Plugs</h1>
+		<span>Make Your Home Smart</span>
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li>Wifi Smart Plugs</li>
+		</ol>
+	</div>
+</section>
+	<!-- #page-title end -->
+
+	<!-- Content============================================= -->
+		<section id="content">
+
+			<div class="content-wrap notoppadding">
+
+				<div class="container clearfix">
+
+					<div class="row">
+						<div class="twelve columns">
+							<div class="clearfix" style="margin-top:60px;"> </div>
+							<article id="controls">
+								<div class='tabs tabs_controls'>
+<!--									<a class="prev_tab">&#8249;</a>-->
+<!--									<a class="next_tab">&#8250;</a>-->
+<!--									<ul class='horizontal'>-->
+<!--										<li><a href="#tab-6ampwifiplug">Oakplug Mini(WiFi)</a></li>-->
+<!--										<li><a href="#tab-16ampwifiplug">Oakplug Plus(WiFi)</a></li>-->
+<!--									</ul>-->
+									<div id='tab-6ampwifiplug'>
+										<!-- product start -->
+										<div class="col_full bottommargin topmargin sony_product">
+											<div class="col_one_third nobottommargin">
+												<div class="product-image">
+													<div class="flexslider_kit1">
+														<ul class="slides">
+															<li data-thumb="{% static 'images/wifiplug/6amp/m1.jpg' %}"><img src="{% static 'images/wifiplug/6amp/m1.jpg' %}"></li>
+															<li data-thumb="{% static 'images/wifiplug/6amp/m2.jpg' %}"><img src="{% static 'images/wifiplug/6amp/m2.jpg' %}"></li>
+															<li data-thumb="{% static 'images/wifiplug/6amp/m3.jpg' %}"><img src="{% static 'images/wifiplug/6amp/m3.jpg' %}"></li>
+															<li data-thumb="{% static 'images/wifiplug/6amp/m4.jpg' %}"><img src="{% static 'images/wifiplug/6amp/m4.jpg' %}"></li>
+															<li data-thumb="{% static 'images/wifiplug/6amp/m5.jpg' %}"><img src="{% static 'images/wifiplug/6amp/m5.jpg' %}"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="clearfix" style="margin-top:20px;"> </div>
+											</div>
+											<div class ="col_two_fifth product-desc">
+												<h3>Oakplug Mini (WiFi)</h3>
+												<p>Automate your low power appliances. Connect it to your Oakter App and schedule, time and remotely turn your devices on and off. Low power appliances include Coffee making machine, Cooler, Speakers, Lamps, Motor (less than 2HP), TV, Aquarium etc.</p>
+												<div id="shklist" >
+													<h4><a href="#6amplist" data-toggle="collapse" class="collapsed" aria-expanded="false"><strong>Specifications&nbsp;<i class="icon-angle-down"></i></strong></a></h4>
+													<div id="6amplist"  aria-expanded="false" style="height: 0px;">
+														<ul class="iconlist">
+															<li><i class="icon-caret-right"></i> Supports upto 1.3KW at 230V</li>
+															<li><i class="icon-caret-right"></i> Range: 110V - 290V</li>
+															<li><i class="icon-caret-right"></i> Highly conductive copper contacts</li>
+															<li><i class="icon-caret-right"></i> BS 546 Type D pin configuration to fit standard Indian small wall sockets</li>
+															<li><i class="icon-caret-right"></i> Universal output socket</li>
+															<li><i class="icon-caret-right"></i> Plug and play device, requires no installation</li>
+															<li><i class="icon-caret-right"></i> Polycarbonate enclosure</li>
+															<li><i class="icon-caret-right"></i> Firmware designed to handle frequent power outages</li>
+															<li><i class="icon-caret-right"></i> Constantly evolves with Over The Air firmware updates</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col_one_fifth col_last product-desc">
+
+												<div class="clear"></div>
+												<p class="nobottommargin">Buy this device </p>
+												<!--<a href="https://imjo.in/n3ZWcb"><button class="add-to-cart button nomargin">Buy Now</button></a> -->
+<!--												<button class="add-to-cart button nomargin Mini">Buy Now</button>-->
+<!--												<form id="oakminiform" action="#" method="POST">-->
+<!--													<input type="hidden" name="title" value="Oakplug Mini(WiFi)">-->
+<!--													<input type="hidden" name="domain" value="">-->
+<!--													<input type="hidden" name="price" value="2990">-->
+<!--													<input type="hidden" name="displayprice" value="Rs 2990">-->
+<!--													<input type="hidden" name="discount" value="0">-->
+<!--													<input type="hidden" name="hubtype" value="">-->
+<!--													<input type="hidden" name="orderitems" value='Oakplug Mini(WiFi)-1-<span id="tpp8">2990</span>'>-->
+<!--													<input type="hidden" name="placedby" value="website-desktop@oakter.com">-->
+<!--												</form>-->
+												<p class="nobottommargin">You can also buy from</p>
+												
+												<a class="other_plateform_link" href="#" rel="noopener noreferrer" target="_blank"><img loading="lazy" src="{% static 'images/common/amazon-buy.png' %}" alt="" width="80" height="80" class="alignnone size-full wp-image-1650 lazyloaded" data-lazy-src="{% static 'images/common/amazon-buy.png' %}" data-was-processed="true"><noscript><img src="{% static 'images/common/amazon-buy.png' %}" alt="" width="80" height="80" class="alignnone size-full wp-image-1650"></noscript></a>
+                                              	
+											
+                                               
+                                           
+                                        	<a class="other_plateform_link" href="#" rel="noopener noreferrer" target="_blank"><img loading="lazy" src="{% static 'images/common/flipkart-buy.png' %}" alt="" width="80" height="80" class="alignnone size-full wp-image-1650 lazyloaded" data-lazy-src="{% static 'images/common/flipkart-buy.png' %}" data-was-processed="true"><noscript><img src="{% static 'images/common/flipkart-buy.png' %}" alt="" width="80" height="80" class="alignnone size-full wp-image-1650"></noscript></a>
+                                                 
+                                           
+                                                
+												<div class="clear"></div><br>
+												
+												
+												
+											
+											</div>
+											<!-- product ends -->
+										</div>	
+									</div>	
+
+								</div>
+<!--								<div class="tab_navigation">-->
+<!--									<a class="prev">&#8249;</a>-->
+<!--									<a class="next">&#8250;</a>-->
+<!--								</div>-->
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

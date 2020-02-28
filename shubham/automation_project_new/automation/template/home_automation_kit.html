@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>About Automation Kits</h1>
+		<span>All your Questions answered in one place</span>
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">About Automation Kits</li>
+		</ol>
+	</div>
+</section>
+<section id="content">
+
+		<!--			 loop can start from here-->
+			<div class="content-wrap notoppadding nobottompadding" >
+			<div style="height:30px;" class="col_full hidden-xs"></div>
+				<div class="section nobg topmargin-lg nobottommargin nobottompadding notopmargin notoppadding">
+
+					<div class="container clearfix">
+						<h3 class="center">EXPERIENCE THE BEST HOME AUTOMATION TECHNOLOGY WITH OUR FICUS PRODUCTS</h3>
+					<div class="col_half nobottommargin center">
+							<div class="fslider nopadding nomargin" data-pagi="false" data-arrows="true" data-thumbs="false" >
+											<div class="flexslider">
+												<div data-lightbox="gallery">
+													<div><img src="{% static 'images/common/app_home1.jpg' %}" style="width:65%;height:65%;"></div>
+												</div>
+											</div>
+										</div>
+						</div>
+						<div class="col_half nobottommargin col_last nobottompadding notopmargin">
+						<div style="height:10px;" class="col_full hidden-xs hidden-sm"></div>
+							<div class="heading-block nobottomborder">
+								<h2>Node-4</h2>
+								<p>The versatile Ficus app lets you schedule and time your appliances, configure voice control with voice asssistants, turn your devices ON/OFF from anywhere, play your favourite channel on your Set Top Box, change your AC's temperature and more
+									<br><a href="/home-automation-product-detail/1/">More Details</a></p>
+							<div class="heading-block">
+							<a href="#" class="button button-3d button-large button-rounded topmargin-sm noleftmargin notopmargin">Buy Now</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			<!--			 loop can end from here-->
+	<div class="content-wrap"></div>
+		<div class="clear"></div>
+
+</section>
+{% endblock %}

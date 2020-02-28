@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>FAQs</h1>
+		<span>All your Questions answered in one place</span>
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">FAQs</li>
+		</ol>
+	</div>
+</section>
+<section id="content">
+	<div class="content-wrap">
+		<div class="container clearfix">
+			<div class="postcontent nobottommargin clearfix">
+				<ul id="portfolio-filter" class="portfolio-filter clearfix">
+					<li class="activeFilter"><a href="#" data-filter="all">All</a></li>
+					<li><a href="#" data-filter=".faq-installation">Installation</a></li>
+					<li><a href="#" data-filter=".faq-use">Use</a></li>
+					<li><a href="#" data-filter=".faq-purchase">Purchase</a></li>
+					<li><a href="#" data-filter=".faq-technical">Technical</a></li>
+					<li><a href="#" data-filter=".faq-warranty">Warranty &amp; Return</a></li>
+					<li><a href="#" data-filter=".faq-app">App</a></li>
+				</ul>
+				<div class="clear"></div>
+				<div id="faqs" class="faqs">
+					<div class="toggle faq faq-installation faq-technical">
+						<div class="togglet"><i class="toggle-closed icon-settings"></i><i class="toggle-open icon-settings"></i>IS IT COMPATIBLE WITH MY AMAZON ECHO?</div>
+						<div class="togglec">Yes it is. Oakter is compatible with amazon echo used in India.<br> Your amazon devices and region settings should be set to India for you to be able to see the Oakter skill in your skills page.
+						</div>
+					</div>
+					<div class="toggle faq faq-installation faq-technical">
+						<div class="togglet"><i class="toggle-closed icon-settings"></i><i class="toggle-open icon-settings"></i>WILL YOU INSTALL THE DEVICES?</div>
+						<div class="togglec">Installation is required for the Smart boxes for switches.
+											<br>The smart plugs and hub can be installed by following instructions on the packaging and app. Oakter offers installation in Select cities.</div>
+					</div>
+					<div class="toggle faq faq-technical faq-installation">
+						<div class="togglet"><i class="toggle-closed icon-settings"></i><i class="toggle-open icon-settings"></i>DO I NEED WIFI AT HOME?</div>
+						<div class="togglec">You require wifi at home
+									for the WiFi smart home hub. The GSM hub can 
+									be operated with your own data enabled SIM 
+									card.
+						</div>
+					</div>
+					<div class="toggle faq faq-technical">
+						<div class="togglet"><i class="toggle-closed icon-settings"></i><i class="toggle-open icon-settings"></i>
+						HOW MANY DEVICES CAN I OPERATE</div>
+						<div class="togglec">One hub can operate 50 Oakter devices. A quadra smart box can operate four devices each. One quadra is also counted as one Oakter device.</div>
+					</div>
+					<div class="toggle faq faq-technical faq-use faq-app">
+						<div class="togglet"><i class="toggle-closed icon-money"></i>
+							<i class="toggle-open icon-money"></i>DO I HAVE TO PAY FOR THE APP?
+						</div>
+						<div class="togglec">The app is absolutely free.</div>
+					</div>
+							
+							<div class="toggle faq faq-technical faq-use faq-app">
+								<div class="togglet"><i class="toggle-closed icon-phone"></i>
+								<i class="toggle-open icon-phone"></i>WHAT MOBILE PLATFORMS DO YOU SUPPORT?</div>
+								<div class="togglec">iOS and Android are fullt supported. We have no windows phone product available.</div>
+							</div>
+							
+							<div class="toggle faq faq-technical faq-use faq-app">
+								<div class="togglet"><i class="toggle-closed icon-users"></i>
+								<i class="toggle-open icon-users"></i>ARE YOU COMPATIBLE WITH VIRTUAL ASSISTANTS</div>
+								<div class="togglec">We are hard at work integrating virtual assistants so that you can use voice commands. The feature will be available soon</div>
+							</div>
+
+											
+							<div class="toggle faq faq-technical faq-use ">
+								<div class="togglet"><i class="toggle-closed icon-users"></i>
+								<i class="toggle-open icon-users"></i>WHAT IS A FIRMWARE UPDATE</div>
+								<div class="togglec">The software that runs your devices can be updated remotely. This means, for some features, you may not need to buy a new device and can upgrade your existing devices for no extra charge</div>
+							</div>
+
+							<div class="toggle faq faq-installation">
+								<div class="togglet"><i class="toggle-closed icon-money"></i><i class="toggle-open icon-money"></i>WILL YOU HELP ME RELOCATE DEVICES IF I CHANGE HOMES</div>
+								<div class="togglec">Yes. This will be chargeable.</div>
+							</div>
+
+							<div class="toggle faq faq-use faq-app">
+								<div class="togglet"><i class="toggle-closed icon-user"></i><i class="toggle-open icon-user"></i>
+HOW MANY USERS CAN OPERATE THE DEVICES?</div>
+								<div class="togglec">Six users can operate the app for free. More users can be added for a fee</div>
+							</div>
+
+							<div class="toggle faq faq-technical">
+								<div class="togglet"><i class="toggle-closed icon-settings"></i><i class="toggle-open icon-settings"></i>WHAT IS THIS HUB?</div>
+								<div class="togglec">Hub is a little box that sits in corner and provides internet connectivity to all the leaves. In a normal house only 1 hub is needed. It has range of 150ft in an open area and about 50ft with walls and other obstructions. It should always remain powered-on & preferably connected to wall socket with inverter back-up.</div>
+							</div>
+
+							<div class="toggle faq faq-warranty">
+								<div class="togglet"><i class="toggle-closed icon-warning-sign"></i><i class="toggle-open icon-warning-sign"></i>
+IS THERE A WARRANTY/RETURN POLICY?</div>
+								<div class="togglec">Return Policy: We follow a no questions asked return policy (for a fully functional product) within 7 days of delivery. For all returns, you must pack your Oakter product in its original packaging and include all accessories and documentation. We reserve the right to charge for any damage to the Oakter products, and missing part fees (if applicable) may apply. <strong>You will be responsible for all return shipping charges and shall assume all risk of loss or damage to product while in transit to us.</strong> 
+
+Warranty Policy: We provide a one year warranty for manufacturing defects from the date of purchase. We will provide a replacement in case of any defects. Replacement products may be new or refurbished at our discretion. This warranty does not apply to: (i) cosmetic damage, such as scratches, nicks, stains, cracks and dents; (ii) damage caused by accident, abuse, misuse, water, flood, fire, or any other acts of nature or external causes; (iii) damage caused by service performed by anyone who is not an authorized service provider of Oakter</div>
+							</div>
+							
+							<div class="toggle faq faq-purchase">
+								<div class="togglet"><i class="toggle-closed icon-cart"></i><i class="toggle-open icon-cart"></i>
+WHERE CAN I BUY?</div>
+								<div class="togglec">You can buy Oakter products 
+									directly from the website or from a dealer 
+									(in select cities). Or online from Amazon.</div>
+							</div>
+
+						<div class="toggle faq faq-purchase faq-use">
+								<div class="togglet"><i class="toggle-closed icon-cart"></i><i class="toggle-open icon-cart"></i>
+CAN I PURCHASE DEVICES AS AND WHEN I LIKE?</div>
+								<div class="togglec">Oakter is modular, which means you can start with even one devcie as long as you purchase a hub.
+									You can continue buying devices and add to the hub as and when you like.</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar nobottommargin col_last clearfix">
+						<div class="sidebar-widgets-wrap">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+{% endblock %}

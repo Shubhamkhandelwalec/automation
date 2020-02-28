@@ -1,0 +1,123 @@
+﻿<!--  Last edited by http://encodedna.com  -->
+<RateLibrary>
+
+<Product>
+<code>0</code>
+<ProductName>6ASP</ProductName>
+<Category>Smart Plugs</Category>
+<Price>1990</Price>
+</Product>
+
+<Product>
+<code>1</code>
+<ProductName>16ASP</ProductName>
+<Category>Smart Plugs</Category>
+<Price>2490</Price>
+</Product>
+
+<Product>
+<code>2</code>
+<ProductName>25ASB</ProductName>
+<Category>Smart Switches</Category>
+<Price>2490</Price>
+</Product>
+
+<Product>
+<code>3</code>
+<ProductName>QSB</ProductName>
+<Category>Smart Switches</Category>
+<Price>5490</Price>
+</Product>
+
+<Product>
+<code>4</code>
+<ProductName>SLM</ProductName>
+<Category>Smart Locks</Category>
+<Price>9990</Price>
+</Product>
+
+<Product>
+<code>5</code>
+<ProductName>SLK</ProductName>
+<Category>Smart Locks</Category>
+<Price>COMING SOON</Price>
+</Product>
+
+<Product>
+<code>6</code>
+<ProductName>SRT</ProductName>
+<Category>Smart Remotes</Category>
+<Price>2490</Price>
+</Product>
+
+<Product>
+<code>7</code>
+<ProductName>SRI</ProductName>
+<Category>Smart Remotes</Category>
+<Price>1490</Price>
+</Product>
+
+<Product>
+<code>8</code>
+<ProductName>SHW</ProductName>
+<Category>Smart Home Hubs</Category>
+<Price>1990</Price>
+</Product>
+
+<Product>
+<code>9</code>
+<ProductName>SHG</ProductName>
+<Category>Smart Home Hubs</Category>
+<Price>2990</Price>
+</Product>
+
+<Product>
+<code>10</code>
+<ProductName>STS</ProductName>
+<Category>Smart Thermostat</Category>
+<Price>1990</Price>
+</Product>
+
+<Product>
+<code>11</code>
+<ProductName>DSB</ProductName>
+<Category>Duo Smart Box</Category>
+<Price>3990</Price>
+</Product>
+
+<Product>
+<code>12</code>
+<ProductName>DSB</ProductName>
+<Category>Duo Smart Box</Category>
+<Price>3990</Price>
+</Product>
+
+<Product>
+<code>13</code>
+<ProductName>6 AMP</ProductName>
+<Category>HUB BASED AUTOMATION</Category>
+<Price>2990</Price>
+</Product>
+
+<Product>
+<code>14</code>
+<ProductName>16 AMP</ProductName>
+<Category>HUB BASED AUTOMATION</Category>
+<Price>3490</Price>
+</Product>
+
+<Product>
+<code>15</code>
+<ProductName>Oakview</ProductName>
+<Category>SMART WIFI CAMERA</Category>
+<Price>7490</Price>
+</Product>
+
+<Product>
+<code>16</code>
+<ProductName>DUO SMART BOX</ProductName>
+<Category>HUB BASED AUTOMATION</Category>
+<Price>3990</Price>
+</Product>
+
+</RateLibrary>

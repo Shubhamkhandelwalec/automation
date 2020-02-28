@@ -1,0 +1,68 @@
+2020-02-25 12:46:24,413 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-25 12:51:15,244 django.request  ERROR Internal Server Error: /home-automation-product-detail/1/ : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/shubham/automation_project/automation/product/views.py", line 9, in home_automation_product_detail
+    return render(request, 'home_automation_wifi_plug_oakter.html')
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2020-02-25 15:22:29,352 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-25 16:59:56,961 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-26 00:48:49,276 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-26 09:39:24,388 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-27 04:57:32,629 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-27 05:30:09,010 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-27 08:50:31,733 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]
+2020-02-27 09:54:01,180 django.request  WARNING Not Found: /favicon.ico : [/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/log.py line 228, in log_response ]

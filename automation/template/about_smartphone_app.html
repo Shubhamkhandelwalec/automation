@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+
+		<section id="page-title">
+			<div class="container clearfix ">
+				<h1>SMART PHONE APP &nbsp;</h1>
+				<span>Your home in your smartphone</span>
+				<ol class="breadcrumb">
+					<li><a href="/">Home</a></li>
+					<li class="active">Smartphone App</li>
+				</ol>
+			</div>
+
+		</section>
+		<section id="content" >
+
+			<div class="content-wrap notoppadding nobottommargin"  >
+				<div class="col_full portfolio-single-image nobottommargin hidden-xs">
+						<a href="#"><img src="{{about_smart_phone_app_title.title_image.url}}" alt="" style="height:300px;width:500px;"></a>
+					</div><!-- .portfolio-single-image end -->
+
+
+				<div class="section notopmargin" >
+
+					<div class="container clear-bottommargin clearfix">
+
+						<div class="row">
+							<div class="col_half nobottommargin center">
+
+							<div class="fslider nopadding nomargin" data-pagi="false" data-arrows="true" data-thumbs="false" >
+											<div class="flexslider">
+												<div class="slider-wrap" data-lightbox="gallery">
+													{% for i in about_smart_phone_app_images %}
+													<div class="slide" style="width: 547px; margin-right: 0px; float: left; display: block;"><img src="{{i.app_images.url}}"></div>
+													{% endfor %}
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+						</div>
+							<div class="col-md-4 col-sm-6 bottommargin">
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-calendar"> </i>
+										</div>
+										<h3>Schedule your appliances</h3>
+										<p>Program appliances like motors &amp; geysers to turn ON/OFF at a pre-set time.</p>
+									</div>
+
+								</div>
+
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-time"> </i>
+										</div>
+										<h3>Auto OFF timer</h3>
+										<p>Make your appliances turn OFF automatically after a set time as per your choice</p>
+									</div>
+
+								</div>
+
+								<div class="col_full ">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-globe"> </i>
+										</div>
+										<h3>Control from anywhere</h3>
+										<p>Unlock your main door or turn your appliances ON/OFF from anywhere in the world</p>
+									</div>
+								</div>
+								<div class="col_full nobottommargin">
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+									<div class="fbox-icon">
+										 <i class="icon-phone-sign"> </i>
+									</div>
+									<h3>In-App Customer suppport</h3>
+									<p>integrated customer support for easy resolution of your automation issues</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 bottommargin">
+								<div class="col_full">
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-group"> </i>
+										</div>
+										<h3>Invite upto 5 users</h3>
+										<p>Selectively share the power of home automation with your family, friends or staff</p>
+									</div>
+								</div>
+								<div class="col_full">
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-note"> </i>
+										</div>
+										<h3>Powerful Notifications</h3>
+										<p>Choose the operations and appliances that you need to be notified about in your app</p>
+									</div>
+								</div>
+								<div class="col_full">
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											 <i class="icon-home"> </i>
+										</div>
+										<h3>Control multiple premises</h3>
+										<p>You can operate automation systems in multiple premises with the same app &amp; username</p>
+									</div>	
+								</div>
+								<div class="col_full nobottommargin">
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+									<div class="fbox-icon">
+											 <i class="icon-download"> </i>
+									</div>
+										<h3>Download</h3>
+										<p>For <a href="#">Apple</a> or <a href="#">Android</a> phone</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

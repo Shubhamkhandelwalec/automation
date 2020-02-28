@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>Watel Level Controller</h1>
+		<span>The best way to control the wastes of water</span>
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">About Automation Kits</li>
+		</ol>
+	</div>
+</section>
+<section id="content">
+
+		<!--			 loop can start from here-->
+			<div class="content-wrap notoppadding nobottompadding" >
+			<div style="height:30px;" class="col_full hidden-xs"></div>
+				<div class="section nobg topmargin-lg nobottommargin nobottompadding notopmargin notoppadding">
+
+					<div class="container clearfix">
+						<h3 class="center">EXPERIENCE THE BEST Water Level Controller TECHNOLOGY WITH OUR FICUS PRODUCTS</h3>
+					<div class="col_half nobottommargin center">
+							<div class="fslider nopadding nomargin" data-pagi="false" data-arrows="true" data-thumbs="false" >
+											<div class="flexslider">
+												<div data-lightbox="gallery">
+													<div><img src="{% static 'images/common/app_home1.jpg' %}" style="width:65%;height:65%;"></div>
+												</div>
+											</div>
+										</div>
+						</div>
+						<div class="col_half nobottommargin col_last nobottompadding notopmargin">
+						<div style="height:10px;" class="col_full hidden-xs hidden-sm"></div>
+							<div class="heading-block nobottomborder">
+								<h2>Node-4</h2>
+								<p> We generally forget to switch off the motor and water is wasted. Now with our Ficus Water Level Controller, you can control the over-headed tanks.  You can easily switch on/off your motor by our automation kit. You can also schedule the time for turn off your motor.
+                                    <br><a href="/home-automation-product-detail/1/">More Details</a></p>
+							<div class="heading-block">
+							<a href="#" class="button button-3d button-large button-rounded topmargin-sm noleftmargin notopmargin">Buy Now</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			<!--			 loop can end from here-->
+	<div class="content-wrap"></div>
+		<div class="clear"></div>
+
+</section>
+{% endblock %}

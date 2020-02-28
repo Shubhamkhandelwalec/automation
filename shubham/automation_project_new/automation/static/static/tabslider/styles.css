@@ -1,0 +1,212 @@
+/**
+ * BlankPlate | Yet another HTML5 Starter Kit
+ *
+ * BlankPlate Main stylesheet
+ *
+ * @copyright	Copyright 2012, Dimitris Krestos
+ * @license		Apache License, Version 2.0 (http://www.opensource.org/licenses/apache2.0.php)
+ * @link		http://vdw.staytuned.gr/html5-starter-kit-blankplate/
+ * @package		BlankPlate
+ * @version		v1.2.3
+ */
+
+/**
+ * WORLD
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+.tabs.tabs_controls .prev_tab, .tabs.tabs_controls .next_tab{
+	display: none;
+}
+.separator {
+	background: white;
+	border-bottom: 1px solid #E5E5E5;
+	color: #888;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 80px;
+	letter-spacing: 2px;
+	width: 100%;
+}
+
+
+/**
+ * TABS
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+.tabs > div {
+	margin-top: 10px;
+	background: #fff !important;
+}
+ul.flex-direction-nav {
+    display: none;
+}
+li.flex-active-slide {
+    display: block !important;
+    width: 358px !important;
+}
+.tabs ul.horizontal {
+	list-style: none outside none;
+	margin: 0;
+	text-align: center;
+}
+
+.tabs ul.horizontal li {
+	background: white;
+	border-bottom: 4px solid #E5E5E5;
+	margin: 0 10px 0 0;
+	display: inline-block;
+} 
+.prev {
+    background-color: #000 !important;
+    color: #fff !important;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    top: 50%;
+    font-size: 44px;
+    line-height: 0;
+    left: 0%;
+    padding: 20px 0px 0 16px;
+    cursor: pointer;
+    z-index: 9999999999;
+}
+.next {
+    background-color: #000 !important;
+    color: #fff !important;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    top: 50%;
+    font-size: 44px;
+    line-height: 0;
+    right: 0%;
+    padding: 20px 0px 0 16px;
+    cursor: pointer;
+    z-index: 9999999999;
+
+}
+.tabs ul.horizontal li a {
+	color: #000;
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 14px 24px;
+	text-decoration: none;
+}
+
+.tabs ul.horizontal li:hover {
+	background: #a0cac0;
+	border-bottom: 4px solid #68a697;
+}
+
+.tabs ul.horizontal li:hover a {
+	color: white;
+}
+
+.active {
+	background: #a0cac0 !important;
+	border-bottom: 4px solid #68a697 !important;
+}
+
+.active a {
+	color: white !important;
+}
+
+.link {
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 48px;
+	margin-top: 20px;
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.anchorLink {
+	border-bottom: 1px dashed white;
+	color: white;
+	text-decoration: none;
+}
+
+.anchorLink:hover {
+	text-decoration: none;
+	border-bottom: none;
+	color: inherit;
+}
+
+.screenshot {
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+
+
+.prev:hover,
+.next:hover {
+	background: #a0cac0 !important;
+	color: #fff !important;
+}
+
+.logo {
+	margin-top: -6px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.button {
+	background-color: #a0cac0;
+	border: none;
+	border-bottom: 4px solid #68a697;
+	color: #FFFFFF;
+	border-radius: 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+	height: 48px;
+	line-height: 48px;
+}
+
+.button:hover {
+	background: #93b7ae;
+	color: #FFF;
+	border-bottom-color: #68a697;
+}
+@media screen and (max-width: 700px) {
+	.tabs ul.horizontal li a {
+		font-size: 14px;
+	    padding: 5px 10px;
+	}
+	.tabs ul.horizontal li {
+		margin: 10px 7px 0 0px;
+	}
+	.col_full.bottommargin.topmargin.sony_product{
+		margin-left: 0px;
+	}
+	.tabs.tabs_controls .prev, .tabs.tabs_controls .next{
+		display: none;
+	}
+	li.flex-active-slide {
+	    display: block !important;
+	    width: 310px !important;
+	}
+	div#tab-homeKit1 {
+	    min-height: 1350px;
+	    max-height: 1350px;
+	}
+	div#tab-homeKit2 {
+	    min-height: 1350px;
+	    max-height: 1350px;
+	}
+	div#tab-homeKit3 {
+	    min-height: 1350px;
+	    max-height: 1350px;
+	}
+
+}

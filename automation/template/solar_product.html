@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>Solar Products</h1>
+		<span>Solar power is pollution free and it does not emit any greenhouse gases</span>
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">About Automation Kits</li>
+		</ol>
+	</div>
+</section>
+<section id="content">
+
+		<!--			 loop can start from here-->
+			<div class="content-wrap notoppadding nobottompadding" >
+			<div style="height:30px;" class="col_full hidden-xs"></div>
+				<div class="section nobg topmargin-lg nobottommargin nobottompadding notopmargin notoppadding">
+
+					<div class="container clearfix">
+						<h3 class="center">Solar is efficient in generating electricity and have low maintenance cost</h3>
+					<div class="col_half nobottommargin center">
+							<div class="fslider nopadding nomargin" data-pagi="false" data-arrows="true" data-thumbs="false" >
+											<div class="flexslider">
+												<div data-lightbox="gallery">
+													<div><img src="{% static 'images/common/solar_product_image.jpg' %}" style="width:65%;height:65%;"></div>
+												</div>
+											</div>
+										</div>
+						</div>
+						<div class="col_half nobottommargin col_last nobottompadding notopmargin">
+						<div style="height:10px;" class="col_full hidden-xs hidden-sm"></div>
+							<div class="heading-block nobottomborder">
+								<h2>Solar Products</h2>
+								<p> Solar is the best alternative for generating electricity.  It can replace all the fossil fuels like coal, wood and gas for the generation of electricity and also reduces the water and air pollution. As our resources are limited, we have to use the solar energy so that we conserve our natural resources.
+                                    <br><a href="/home-automation-product-detail/1/">More Details</a></p>
+							<div class="heading-block">
+							<a href="#" class="button button-3d button-large button-rounded topmargin-sm noleftmargin notopmargin">Buy Now</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			<!--			 loop can end from here-->
+	<div class="content-wrap"></div>
+		<div class="clear"></div>
+
+</section>
+{% endblock %}

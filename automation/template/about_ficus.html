@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block styles %}{% endblock %}
+{% block scripts %}{% endblock %}
+{% block content %}
+		<section id="content">
+			<div class="content-wrap nopadding">
+				<div class="section parallax nobottommargin notopmargin notoppadding noborder dark" style="height: 450px; padding: 120px 0;">
+					<div class="vertical-middle center" style="z-index: 2;">
+						<div class="container clearfix" data-animate="fadeInUp">
+							<div class="heading-block nobottomborder nobottommargin">
+								<h2 style="font-size: 42px;">SMART YOU<br>SMART HOME</h2>
+								<span>Oakter, with its unmatched expertise in manufacturing, electronics design, user experience and software development, manufactures a diverse range of home automation products.</span>
+								<li><div class="right"><img width="20%" src="{% static 'images/common/wwa.png' %}"></div>	</li>
+
+							</div>
+							
+						</div>
+					</div>
+					<div class="video-wrap" style="z-index: 1;">
+						<video poster="{% static 'images/videos/explore.jpg' %}" preload="auto" loop autoplay muted>
+							<source src="{% static 'images/videos/explore.html' %}" type='video/mp4' />
+							<source src="{% static 'images/videos/explore.webm' %}" type='video/webm' />
+						</video>
+						<div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
+					</div>
+				</div>
+				<div class="col_full bottommargin-lg common-height">
+					<div class="col-md-4 col-padding ohidden" >
+						<div>
+							<h3 class="uppercase" style="font-weight: 600;">Who are we?</h3>
+							<p style="line-height: 1.8;">Brand Oakter is an offshoot of Mechartes Researchers Pvt Ltd, one of the world's leading companies in engineering design and simulations. Mechartes was started in 2005, under the tech incubation program of IIT Delhi. Oakter was launched in 2015 after two years of research and development. Oakter has quickly gained prominence as one of the major players in Indian home automation market</p>
+							
+							<i class="icon-bulb bgicon"></i>
+						</div>
+					</div>
+					<div class="col-md-4 col-padding ohidden" >
+						<div>
+							<h3 class="uppercase" style="font-weight: 600;">Our Mission</h3>
+							<p style="line-height: 1.8;">We are focussed towards delivering the best quality products at the right price while ensuring delight in customer experience. We strive towards enriching our smart home portfolio regularly with new products that are compatible with Oakter's smart home hub and app so that users can constantly enrich their smart home experience and improve their home management productivity</p>
+
+							<i class="icon-cog bgicon"></i>
+						</div>
+					</div>
+					<div class="col-md-4 col-padding ohidden" >
+						<div>
+							<h3 class="uppercase" style="font-weight: 600;">Our commitment</h3>
+							<p style="line-height: 1.8;">Oakter takes strict measures to ensure security and privacy of its customers. The comapny is ISO27001 certified for indormation security. The products are CE certified and are designed developed and proudly manufactured in India and adhere to BIS standards for electrical devices to operate seamlessly with Indian homes.</p>
+							
+							<i class="icon-thumbs-up bgicon"></i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

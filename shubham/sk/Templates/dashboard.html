@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container">
+  <h2>User Manager</h2>
+
+<!--<form action="/user/dashboard/" method="post">-->
+<!--<button>User</button>-->
+<!--</form>-->
+         <button class="btn btn-primary" type="button" onClick="location.href='/register/'"> + Add User </button>
+
+  <table class="table table-bordered">
+  <tr>
+    <th>Username</th>
+    <th>Fullname</th>
+    <th>Gmail</th>
+
+      <th>Profile_img</th>
+      <th> </th>
+  </tr>
+    {% if error %}
+    <h3>{{ error }}</h3>
+    {% endif %}
+    {% for i in data %}
+  <tr>
+
+   <td>{{i.user_name}}</td>
+    <td>{{i.full_name}}</td>
+    <td>{{i.email}}</td>
+    <td> {% if i.profile_img %}
+        <img src={{i.profile_img.url}} alt={{i.profile_img.url}} height="70" width="100"> {% endif %}</td>
+      <td>
+          <div><a class="btn btn-success" href="/users/addedit/{{i.id}}">Edit</a></div>
+          <div><a class="btn btn-danger" href="/users/del/{{i.id}}">Delete</a></div>
+      </td>
+	</tr>
+    {% endfor %}
+</table>
+</div>
+
+{% endblock %}
