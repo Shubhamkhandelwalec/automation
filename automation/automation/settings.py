@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'automation_db',
         'USER': 'test26',
         'PASSWORD': 'Shubham@123',
-        'HOST': '148.66.138.143',
+        'HOST': 'ficussmart.com',
         'PORT': 3306,
     }
 }
